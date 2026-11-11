@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studio Priscila Peres</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bordo: '#8C3B4A',
+            bordoHover: '#732F3C',
+            rosePink: '#D99B9B',
+            bgPinkLight: '#FDF2F2',
+            textDark: '#1A1A1A',
+            textMuted: '#666666',
+            footerBg: '#231B1B'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: #1A1A1A;
+      background-color: #FFFFFF;
+    }
+    .font-serif-title {
+      font-family: 'Cormorant Garamond', serif;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-rosePink selection:text-white">
+
+  <!-- HEADER / MENU SUPERIOR -->
+  <header class="w-full bg-white border-b border-gray-100 px-5 py-4 sticky top-0 z-40">
+    <div class="max-w-xl mx-auto flex items-center justify-between">
+      <div>
+        <h1 class="font-serif-title text-2xl font-bold tracking-tight text-textDark leading-none">
+          Priscila Peres<span class="text-bordo">.</span>
+        </h1>
+        <span class="text-[9px] font-semibold uppercase tracking-[0.2em] text-textMuted block mt-1">
+          STUDIO DE BELEZA
+        </span>
+      </div>
+      <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank"
+         class="bg-bordo hover:bg-bordoHover text-white text-xs font-medium px-4 py-2.5 rounded-full transition flex items-center gap-1">
+        Agendar horário ↗
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION COM IMAGEM DE FUNDO -->
+  <section class="relative bg-black text-white min-h-[520px] flex flex-col justify-between p-6 overflow-hidden">
+    <!-- Imagem de fundo com overlay escuro -->
+    <div class="absolute inset-0 z-0">
+      <img src="img/cabelo.jpg" alt="Studio Priscila Peres" class="w-full h-full object-cover opacity-50" onerror="this.src='https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800'">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
+    </div>
+
+    <div class="relative z-10 max-w-xl mx-auto w-full my-auto py-8">
+      <!-- Tag de inspiração -->
+      <div class="flex items-center gap-1.5 text-rosePink mb-4">
+        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z"/>
+        </svg>
+        <span class="text-[10px] uppercase font-semibold tracking-widest text-rosePink">SUA BELEZA, NOSSA INSPIRAÇÃO</span>
+      </div>
+
+      <!-- Título Principal -->
+      <h2 class="font-serif-title text-5xl sm:text-6xl font-normal leading-none mb-4 text-white">
+        Studio <br>
+        Priscila <span class="italic text-rosePink">Peres</span>
+      </h2>
+
+      <!-- Subtítulo -->
+      <p class="text-sm font-light text-gray-200 leading-relaxed mb-8 max-w-xs">
+        Realce sua essência. Um espaço dedicado à sua beleza, ao seu cuidado e ao seu momento.
+      </p>
+
+      <!-- Botão de Agendamento -->
+      <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20meu%20momento." target="_blank"
+         class="inline-flex items-center justify-center gap-2 bg-bordo hover:bg-bordoHover text-white font-medium text-xs px-6 py-3.5 rounded-lg transition shadow-lg mb-6">
+        <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24">
+          <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+        </svg>
+        Agende seu momento ↗
+      </a>
+
+      <!-- Localização simples -->
+      <div class="flex items-center gap-1.5 text-xs text-gray-300 font-light">
+        <span>📍</span>
+        <span>Nova Iguaçu, Rio de Janeiro</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAIXA DE VALORES / DESTAQUES -->
+  <section class="bg-bgPinkLight border-y border-pink-100/50 py-3.5 px-4">
+    <div class="max-w-xl mx-auto flex items-center justify-center gap-6 text-[11px] text-textMuted font-medium">
+      <div class="flex items-center gap-1.5">
+        <span class="text-bordo">♡</span>
+        <span>Cuidado em cada detalhe</span>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <span class="text-bordo">✧</span>
+        <span>Beleza que é sua</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE SERVIÇOS E PREÇOS -->
+  <main class="max-w-xl mx-auto px-5 py-10 w-full space-y-12">
+
+    <!-- Cabeçalho da Seção -->
+    <div class="text-center space-y-1">
+      <span class="text-[10px] uppercase tracking-widest font-bold text-bordo">FEITO PARA VOCÊ</span>
+      <h2 class="font-serif-title text-3xl sm:text-4xl font-normal text-textDark">Beleza em cada detalhe</h2>
+      <p class="text-xs text-textMuted font-light">Escolha seu cuidado. A gente cuida do resto.</p>
+    </div>
+
+    <!-- CATEGORIA 1: SOBRANCELHAS & CÍLIOS -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2 pb-2">
+        <span class="text-bordo text-lg">✧</span>
+        <h3 class="font-serif-title text-2xl font-normal text-textDark">Sobrancelhas & cílios</h3>
+      </div>
+
+      <div class="space-y-4 divide-y divide-gray-100">
+        <!-- Item 1 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Brow Lamination</h4>
+            <span class="text-xs text-textMuted">R$ 120,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Brow%20Lamination." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Design de Sobrancelhas</h4>
+            <span class="text-xs text-textMuted">R$ 40,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Design%20de%20Sobrancelhas." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Micropigmentação</h4>
+            <span class="text-xs text-textMuted">R$ 450,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Micropigmentação." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIA 2: CABELOS & MECHAS -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2 pb-2">
+        <span class="text-bordo text-lg">✂</span>
+        <h3 class="font-serif-title text-2xl font-normal text-textDark">Cabelos & mechas</h3>
+      </div>
+
+      <div class="space-y-4 divide-y divide-gray-100">
+        <!-- Item 1 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Loiras & Mechas</h4>
+            <span class="text-xs text-textMuted">R$ 350,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Loiras%20%26%20Mechas." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Corte de Cabelo</h4>
+            <span class="text-xs text-textMuted">R$ 80,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Corte%20de%20Cabelo." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Penteados</h4>
+            <span class="text-xs text-textMuted">R$ 150,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Penteados." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIA 3: LÁBIOS & ESTÉTICA -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2 pb-2">
+        <span class="text-bordo text-lg">❀</span>
+        <h3 class="font-serif-title text-2xl font-normal text-textDark">Lábios & estética</h3>
+      </div>
+
+      <div class="space-y-4 divide-y divide-gray-100">
+        <!-- Item 1 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Micropigmentação Labial</h4>
+            <span class="text-xs text-textMuted">R$ 450,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Micropigmentação%20Labial." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Estética / Cuidados Faciais</h4>
+            <span class="text-xs text-textMuted">R$ 120,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Estética/Cuidados%20Faciais." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIA 4: UNHAS & MAQUIAGEM -->
+    <section class="space-y-4">
+      <div class="flex items-center gap-2 pb-2">
+        <span class="text-bordo text-lg">💎</span>
+        <h3 class="font-serif-title text-2xl font-normal text-textDark">Unhas & maquiagem</h3>
+      </div>
+
+      <div class="space-y-4 divide-y divide-gray-100">
+        <!-- Item 1 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Manicure / Nails de Alto Padrão</h4>
+            <span class="text-xs text-textMuted">R$ 60,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Manicure/Nails." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex items-center justify-between pt-3">
+          <div>
+            <h4 class="text-xs font-semibold text-textDark">Maquiagem Profissional</h4>
+            <span class="text-xs text-textMuted">R$ 180,00</span>
+          </div>
+          <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20Maquiagem%20Profissional." target="_blank"
+             class="border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium px-4 py-1.5 rounded-lg transition">
+            Agendar ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nota de rodapé dos preços -->
+    <p class="text-[11px] text-textMuted text-center font-light leading-relaxed pt-2">
+      Valores ilustrativos. Confirme os preços e os detalhes do procedimento pelo WhatsApp antes de agendar.
+    </p>
+
+  </main>
+
+  <!-- SEÇÃO DE GALERIA / RESULTADOS QUE ENCANTAM -->
+  <section class="bg-bgPinkLight py-12 px-5 border-t border-pink-100">
+    <div class="max-w-xl mx-auto space-y-6">
+      <div>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-bordo block mb-1">NOSSO TRABALHO, SUA BELEZA</span>
+        <h2 class="font-serif-title text-4xl font-normal text-textDark leading-tight mb-2">
+          Resultados que <br> encantam
+        </h2>
+        <p class="text-xs text-textMuted font-light mb-4">
+          Transformações reais, feitas aqui no studio.
+        </p>
+
+        <a href="https://instagram.com/studiopriscilaperes" target="_blank"
+           class="inline-flex items-center gap-1.5 text-xs text-bordo font-medium hover:underline mb-6">
+          📷 Veja mais no Instagram ↗
+        </a>
+      </div>
+
+      <!-- Filtros da Galeria -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-2">
+        <button class="bg-bordo text-white text-xs px-4 py-2 rounded-full font-medium shadow-sm">Todos</button>
+        <button class="bg-white text-textMuted text-xs px-4 py-2 rounded-full font-medium border border-gray-200 hover:bg-gray-50">Cabelos</button>
+        <button class="bg-white text-textMuted text-xs px-4 py-2 rounded-full font-medium border border-gray-200 hover:bg-gray-50">Sobrancelhas</button>
+      </div>
+
+      <!-- Cards da Galeria de Fotos -->
+      <div class="space-y-6 pt-2">
+       
+        <!-- Card 1: Loiras & Mechas -->
+        <div class="relative overflow-hidden rounded-2xl bg-black aspect-[4/5] shadow-md group">
+          <img src="img/cabelo.jpg" alt="Loiras & mechas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600'">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-5 text-white">
+            <h3 class="font-serif-title text-2xl font-normal">Loiras & mechas</h3>
+            <p class="text-xs text-gray-300 font-light mt-0.5">Iluminação que valoriza você</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Brow lamination -->
+        <div class="relative overflow-hidden rounded-2xl bg-black aspect-[4/5] shadow-md group">
+          <img src="img/sobrancelha.jpg" alt="Brow lamination" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600'">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-5 text-white">
+            <h3 class="font-serif-title text-2xl font-normal">Brow lamination</h3>
+            <p class="text-xs text-gray-300 font-light mt-0.5">Um novo olhar, a mesma essência</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Design de sobrancelhas -->
+        <div class="relative overflow-hidden rounded-2xl bg-black aspect-[4/5] shadow-md group">
+          <img src="img/sobrancelha.jpg" alt="Design de sobrancelhas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.src='https://images.unsplash.com/photo-1588516903720-8ceb67f9ef84?w=600'">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-5 text-white">
+            <h3 class="font-serif-title text-2xl font-normal">Design de sobrancelhas</h3>
+            <p class="text-xs text-gray-300 font-light mt-0.5">Beleza nos pequenos detalhes</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO DE LOCALIZAÇÃO -->
+  <section class="py-12 px-5 bg-white border-b border-gray-100">
+    <div class="max-w-xl mx-auto space-y-6">
+      <div>
+        <span class="text-[10px] uppercase tracking-widest font-bold text-bordo block mb-1">TE ESPERAMOS AQUI</span>
+        <h2 class="font-serif-title text-3xl sm:text-4xl font-normal text-textDark leading-tight mb-2">
+          Seu próximo momento <br> de beleza tem endereço.
+        </h2>
+        <p class="text-xs text-textMuted font-light">
+          Studio Priscila Peres, em Nova Iguaçu.<br>
+          Venha se cuidar e se sentir ainda mais você.
+        </p>
+      </div>
+
+      <!-- Card do Endereço -->
+      <div class="flex items-start gap-3 bg-gray-50/80 p-4 rounded-xl border border-gray-100">
+        <span class="text-bordo text-xl mt-0.5">📍</span>
+        <div class="text-xs text-textMuted space-y-0.5">
+          <p class="font-semibold text-textDark text-sm">Studio Priscila Peres</p>
+          <p>Rua Otávio Moreira de Melo, 15, Sala</p>
+          <p>Nova Iguaçu — RJ</p>
+          <p class="text-[11px] text-gray-400">CEP 26271-001</p>
+        </div>
+      </div>
+
+      <!-- Botões de Ação do Endereço -->
+      <div class="flex items-center gap-3">
+        <a href="https://maps.google.com/?q=Rua+Otavio+Moreira+de+Melo+15+Nova+Iguacu+RJ" target="_blank" rel="noopener noreferrer"
+           class="flex-1 bg-bordo hover:bg-bordoHover text-white text-xs font-medium py-3 px-4 rounded-full text-center transition">
+          Como chegar ↗
+        </a>
+        <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." target="_blank"
+           class="flex-1 border border-gray-200 text-bordo hover:bg-bgPinkLight text-xs font-medium py-3 px-4 rounded-full text-center transition flex items-center justify-center gap-1">
+          <span>Agendar</span>
+          <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.82.49 3.53 1.35 5L2 22l5.1-1.31A9.93 9.93 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ ESCURO -->
+  <footer class="bg-footerBg text-white py-10 px-5">
+    <div class="max-w-xl mx-auto space-y-6">
+      <div>
+        <h3 class="font-serif-title text-2xl font-bold tracking-tight leading-none">
+          Priscila Peres<span class="text-rosePink">.</span>
+        </h3>
+        <span class="text-[9px] font-semibold uppercase tracking-[0.2em] text-gray-400 block mt-1">
+          STUDIO DE BELEZA
+        </span>
+      </div>
+
+      <div>
+        <a href="https://instagram.com/studiopriscilaperes" target="_blank"
+           class="inline-flex items-center gap-2 text-xs text-gray-300 hover:text-white transition">
+          <span>📷</span>
+          <span>@studiopriscilaperes ↗</span>
+        </a>
+      </div>
+
+      <div class="pt-4 border-t border-white/10 text-[11px] text-gray-500 leading-relaxed">
+        <p>© 2026 Studio Priscila Peres.</p>
+        <p>Beleza com cuidado e personalidade.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DO WHATSAPP DO CANTO INFERIOR -->
+  <a href="https://wa.me/message/FQR57SP5JGEZE1?text=Olá!%20Gostaria%20de%20tirar%20uma%20dúvida." target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-5 right-5 bg-bordo text-white p-3.5 rounded-full shadow-2xl hover:scale-110 transition duration-300 z-50 flex items-center justify-center">
+    <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+      <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.964 9.964 0 001.333 4.993L2 22l5.233-1.237a9.935 9.935 0 004.779 1.217h.004c5.505 0 9.988-4.478 9.989-9.984 0-2.669-1.038-5.176-2.925-7.062A9.925 9.925 0 0012.012 2z"/>
+    </svg>
+  </a>
+
+</body>
+</html>
